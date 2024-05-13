@@ -104,11 +104,14 @@ body{
 }
 .info-container--title ul{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
     
 }
 .info-container--title ul li {
     margin: 1rem;
+    font-size: 1rem;
+    
 }
 
 .info-container--title ul li:first-child{
@@ -116,7 +119,7 @@ body{
 }
 .info-container aside{
     display: flex;
-   
+    justify-content: center;
     
 }
 .info-container aside ul{
@@ -156,7 +159,6 @@ body{
     position: absolute;
     bottom: 0;
     right: 2rem;
-    
 
 }
 
@@ -167,4 +169,62 @@ body{
     font-size: 2rem;
     color: #f0f0f0;
     font-weight: 900;
+}
+
+@media screen and (min-width:720px) {
+    
+    .bg{
+        background-size: 80rem auto;
+    }
+    .info-container--title{
+        max-width: 70rem;
+        
+    }
+    .info-container--title h1{
+        font-size: 6rem;
+    }
+    .info-container--title ul li {
+        margin: 1.6rem;
+        font-size: 2rem;
+        
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    .bg{
+        background-size: 100rem auto;
+    }
+    .info-container--title{
+        max-width: 100rem;
+        
+    }
+    .info-container--title h1{
+        font-size: 6rem;
+    }
+    
+}
+@media screen and (min-width:1440px) {
+    
+    .info-container--title{
+        max-width: 120rem;
+    }
+    .info-container--title h1{
+        font-size: 7rem;
+    }
+    .info-container--title ul li {
+        margin: 2.4rem;
+        font-size: 3rem;
+        
+    }
+    .info-container aside ul li{
+        
+        width: 10rem;
+        height: 10rem;
+        
+    }
+    .footer div{
+        font-size: 3rem;
+        
+    }
 }
