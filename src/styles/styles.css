@@ -153,16 +153,17 @@ body{
 }
 
 .footer{
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    
+
 }
 
 .footer div{
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 2rem;
     color: #f0f0f0;
     font-weight: 900;
