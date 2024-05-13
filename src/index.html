@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,74 @@
     <script src="https://kit.fontawesome.com/4b4de2e1c1.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class='navbar-logo'>Logo</div>
-            <i class="fa-solid fa-bars"></i>
-            <ul class="navbar-list" >
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>Biografía</li>
-                </a>
-                <a href="#">
-                    <li>Portfolio</li>
-                </a>
-                <li>
+            <div class="navbar-right">
+                <i class="fa-solid fa-bars navbar-menu"></i>
+                <ul class="navbar-list navbar-list--toogle">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Biografía</li>
+                    </a>
+                    <a href="#">
+                        <li>Portfolio</li>
+                    </a>
+
                     <a href="#">
                         <li>Contacto</li>
                     </a>
-                </li>
-            </ul>
+                </ul>
+            </div>
         </nav>
     </header>
-    <script src="./scripts/index.js"></script>
+
+    <main>
+        <section class="info-container">
+            <div class="bg"></div>
+            <article class="info-container--main" style="position: fixed;">
+             <div class="info-container--title">
+                <h1>Luis Carlos Bravo</h1>
+                <ul>
+                    <li>Software developer</li>
+                    <li>Technology enthusiast</li>
+                    <li>Building this side</li>
+                </ul>
+                <aside>
+                    <ul>
+                        <li><a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+    
+                    </ul>
+    
+                </aside>
+             </div>
+            </article>
+            
+        </section>
+    </main>
+    <footer class="footer"> 
+        <div>
+            <p>Made by Luis</p>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./scripts/index.js">
+
+    </script>
 </body>
+
 </html>
