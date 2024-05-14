@@ -16,7 +16,7 @@ body{
     justify-content: space-between;
     position: fixed;
     font-size: 3rem;
-    align-items: center;
+    align-items:flex-end;
     background-color: #348cb2;
     color: white;
     width: 100vw;
@@ -27,37 +27,110 @@ body{
 }
 .navbar-right{
     display: flex;
+    align-items:flex-end;
+    justify-content: center;
 }
-.navbar-right ul{
-    display: none;
-    list-style-type: none;
-    position:absolute;
-    top: 5rem;
-    right: 1rem;
-    font-size: 1.6rem;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
+.navbar-menu{
+    cursor: pointer;
+}
+.navbar-right p{
+    font-size: 2rem;
+    margin-right: 1.6rem;
+    letter-spacing: 0.3rem;
+    font-size: 500;
+}
+.navbar-list--toogle{
+    
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    height: 100vh;
+    font-size: 3rem;
+    width: 19rem;
+    display:flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color:#219ebc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-right ul a {
-    text-decoration: none;
-    color: #348cb2;
+    transform: translateX(30rem);
+    transition: transform 1s ease;
+} 
+.moveLeft{
+    transform: translateX(0);
     
 }
+
+
+.navbar-list--toogle .close-navbar{
+    
+    color: #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.close-navbar-second{
+   
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0.3rem solid #f0f0f0;
+    
+}
+.close-navbar .close-navbar-second:hover{
+   
+    background-color: rgba(200, 200, 200, 0.5);
+    /* transform: scale(1.02); */
+    animation: background-color 1s ease-in-out;
+    cursor: pointer;
+}
+/* .navbar-list--toogle div i:hover{
+    transform: scale(1.02);
+    animation: transform 1s ease-in-out;
+    color: #f0f0f0;
+    
+} */
+.navbar-list--toogle ul {
+    text-align:start;
+    
+}
+.navbar-list--toogle ul a{
+    
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    
+}
+.navbar-list--toogle ul a li{
+    padding: 1rem 0 0  0;
+    list-style-type: none;
+    margin: 1rem 0 1rem 0;
+    border-top: 2px solid #348cb2;
+    cursor: pointer;
+}
+.navbar-list--toogle .navbar-list-first--item{
+    border-top: none;
+}
+
+
 .navbar-right ul a li{
     margin-bottom: 0.6rem;
     color: #333;  
     padding: 0.2rem 1rem;
 }
-
-.navbar-right ul a  li:hover {
-    background-color: #0056b3;
-    border-radius: 0.5rem;
-    color: #f0f0f0;
+ 
+.navbar-list--toogle ul a li:hover {
     
-}
+    border-radius: 0.5rem;
+    transform: scale(1.02);
+    animation: transform 1s ease-in-out;
+} 
+/*--------------- End navbar ------------------*/
+
+
 .info-container{
     
     height: 100%;
@@ -188,6 +261,9 @@ body{
         font-size: 2rem;
         
     }
+    .navbar-list--toogle{
+        width: 24rem;
+    } 
 }
 
 @media screen and (min-width:1024px) {
@@ -202,6 +278,9 @@ body{
     .info-container--title h1{
         font-size: 6rem;
     }
+    .navbar-list--toogle{
+        width: 26rem;
+    } 
     
 }
 @media screen and (min-width:1440px) {
@@ -227,4 +306,43 @@ body{
         font-size: 3rem;
         
     }
+    .navbar-list--toogle{
+        width: 30rem;
+    } 
+}
+@media screen and (min-width:2200px) {
+    
+    .navbar{
+        font-size: 5rem;
+    }
+    .navbar-logo{
+        font-size: 5rem;
+    }
+    .navbar-right p{
+        font-size: 3.6rem;
+        margin-right: 3rem;
+        
+    }
+    .navbar-list--toogle {
+        width: 40rem;
+        font-size: 5rem;
+    }
+
+    .navbar-list--toogle {
+
+        transform: translateX(40rem);
+    }
+    .moveLeft{
+        transform: translateX(0);
+        
+    }
+    .navbar-list--toogle ul a{
+    
+    font-size: 3.2rem;    
+    }
+    .navbar-list--toogle ul a li{
+        margin-bottom: 1rem;
+        padding: 2rem 0 0 0 ;
+    }
+    
 }
