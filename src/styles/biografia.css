@@ -132,6 +132,13 @@ body{
 } 
 /*------------ end navbar-------------- */
 
+.main-biografia-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/personal-page/src/assets/images/bg-button.png);
+}
 .biografia-container{
     height: 100vh;
     display: flex;
@@ -140,11 +147,12 @@ body{
     align-items: center;
     padding: 0rem 1rem; 
     justify-content: center;
+    max-width: 35rem;
     
 }
 .biografia-container--img{
-    width: 20rem;
-    height: 20rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
@@ -158,8 +166,9 @@ body{
     
 }
 .biografia-container-content--title{
+    margin-top: 3rem;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     color: #3e3e3e;
     
 }
@@ -169,12 +178,12 @@ body{
 }
 .biografia-container-content--parragraph {
     letter-spacing: 0.1rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 3rem;
     text-align: center;
 }
 .biografia-container-content--projects{
-    margin-top: 5rem;
+    margin-top: 10rem;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 500;
@@ -219,14 +228,53 @@ body{
     .navbar-list--toogle{
         width: 24rem;
     } 
-    
+    .biografia-container{
+        
+        max-width: 45rem;
+        
+    }
+    .biografia-container-content--title{
+        
+        font-size: 4rem;  
+        
+    }
+
 }
 @media screen and (min-width:1024px) {
     
     .navbar-list--toogle{
         width: 26rem;
     } 
-    
+    .biografia-container{
+        flex-direction:row;
+        max-width: 70rem;
+        
+    }
+    .biografia-container--img{
+        width: 30rem;
+        height: 30rem;
+        margin-right: 2rem;
+    }
+    .biografia-container-content{
+        height: 30rem;
+        
+        justify-content: space-between;
+    }
+    .biografia-container-content--title{
+        
+        font-size: 4.6rem;  
+        margin: 0;
+    }
+    .biografia-container-content--parragraph {
+        
+        font-size: 2rem;
+        line-height: 3rem;
+        
+    }
+    .biografia-container-content--projects{
+        margin: 0;
+        width: 90%;
+    }
 }
 @media screen and (min-width:1440px) {
     
@@ -234,6 +282,34 @@ body{
     .navbar-list--toogle{
         width: 30rem;
     } 
+    .biografia-container{
+        flex-direction:row;
+        max-width: 80rem;
+        
+    }
+    .biografia-container--img{
+        width: 34rem;
+        height: 34rem;
+        margin-right: 2rem;
+    }
+    .biografia-container-content{
+        height: 34rem;
+        
+        justify-content: space-between;
+    }
+    .biografia-container-content--title{
+        
+        font-size: 5.4rem;  
+        margin: 0;
+    }
+    .biografia-container-content--parragraph {
+        
+        font-size: 3rem;
+        line-height: 3rem;
+        
+    }
+   
+    
 }
 @media screen and (min-width:2200px) {
     
@@ -270,4 +346,12 @@ body{
         padding: 2rem 0 0 0 ;
     }
     
+}
+@media  screen and (max-height:700px) {
+    .biografia-container--img{
+        width: 18rem;
+        height: 18rem;
+        margin-top: 3rem;
+      
+    }
 }
