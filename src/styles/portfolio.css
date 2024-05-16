@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+.navbar{
+    padding: 1rem 2rem ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 3rem;
+    align-items:flex-end;
+    background-color: #348cb2;
+    color: white;
+    width: 100vw;
+    z-index: 100; 
+    top: 0;
+    left: 0;
+}
+.navbar-logo{
+    font-size: 2rem;
+}
+.navbar-right{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+.navbar-menu{
+    cursor: pointer;
+}
+.navbar-right p{
+    font-size: 2rem;
+    margin-right: 1.6rem;
+    letter-spacing: 0.3rem;
+    font-size: 500;
+}
+.navbar-list--toogle{
+    
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    height: 100vh;
+    font-size: 3rem;
+    width: 19rem;
+    display:flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color:#219ebc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateX(30rem);
+    transition: transform 1s ease;
+} 
+.moveLeft{
+    transform: translateX(0);
+    
+}
+
+
+.navbar-list--toogle .close-navbar{
+    
+    color: #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.close-navbar-second{
+   
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0.3rem solid #f0f0f0;
+    
+}
+.close-navbar .close-navbar-second:hover{
+   
+    background-color: rgba(200, 200, 200, 0.5);
+    /* transform: scale(1.02); */
+    animation: background-color 1s ease-in-out;
+    cursor: pointer;
+}
+/* .navbar-list--toogle div i:hover{
+    transform: scale(1.02);
+    animation: transform 1s ease-in-out;
+    color: #f0f0f0;
+    
+} */
+.navbar-list--toogle ul {
+    text-align:start;
+    
+}
+.navbar-list--toogle ul a{
+    
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    
+}
+.navbar-list--toogle ul a li{
+    padding: 1rem 0 0  0;
+    list-style-type: none;
+    margin: 1rem 0 1rem 0;
+    border-top: 2px solid #348cb2;
+    cursor: pointer;
+}
+.navbar-list--toogle .navbar-list-first--item{
+    border-top: none;
+}
+
+
+.navbar-right ul a li{
+    margin-bottom: 0.6rem;
+    color: #333;  
+    padding: 0.2rem 1rem;
+}
+ 
+.navbar-list--toogle ul a li:hover {
+    
+    border-radius: 0.5rem;
+    transform: scale(1.02);
+    animation: transform 1s ease-in-out;
+} 
+.portfolio-bg{
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #348cb2 url(../assets/images/bg.jpg) bottom left;
+    background-repeat: repeat-x;
+    position: fixed;
+    width: 6000px; 
+    z-index: 1;
+    transform: translate3d(0,0,0);
+    animation: moveInfinity 200s linear infinite; 
+    background-size: 50rem auto;
+    
+}
+@keyframes moveInfinity {
+    from{
+        transform: translate3d(0,0,0);
+    }to{
+        transform: translate3d(-250rem,0,0);
+    }
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+     align-items: center; 
+    justify-content: center; 
+}
+.portfolio-container{
+    
+    max-width: 35rem;
+    padding: 5rem 2rem 2rem 2rem;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    color:#f0f0f0;
+    
+}
+.portfolio-container h1{
+    
+    margin-top: 6rem;
+    font-size: 2.4rem;
+    
+}
+
+.portfolio-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url(../assets/images/bg-button.png);
+    margin: 3rem 0 0 0;
+    color: #333;
+    box-shadow:0 -4px 8px rgba(0, 0, 0, 0),0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 35rem;
+}
+.portfolio-container p{
+    font-weight: 300;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+}
+
+.portfolio-item--img-container{
+    height: 65%;
+    width: 100%;
+}
+.portfolio-item--description{
+    height: 35%;
+}
+.portfolio-item--img-container img{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item--description{
+    padding: 2rem;
+
+}
+.portfolio-item--description h3{
+    font-size: 1.6rem
+
+}
+.contact{
+    margin: 4rem 0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    background-image: url(/personal-page/src/assets/images/bg-button.png);
+    background-color: #43bff0;
+    display: inline-block;
+    width: 30rem;
+    /* max-width: 31rem; */
+    text-align: center;
+    padding: 2rem;
+    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 0.8rem;
+    letter-spacing: 0.1rem;
+    position: relative;
+    z-index: 20;
+}
+.contact:hover{
+    transform: scale(1.01);
+    animation: transfor .2s ease-in-out;
+}
+@media screen and (min-width:768px) {
+    .portfolio-container{
+        max-width: 45rem; 
+    }
+    .portfolio-container h1{
+        font-size: 2.8rem;
+    }
+    .portfolio-container p{
+        font-size: 1.8rem;
+    }
+    
+    .portfolio-item-container{
+        height: 45rem;
+    }
+    .portfolio-item--description h3{
+        font-size: 2.6rem
+    
+    }
+    .portfolio-item--description p{
+        font-size: 2rem
+    
+    }
+    .contact{
+        
+        width: 41rem;
+        
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .portfolio-container {
+        /* width: 95rem; */
+        max-width: 95rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .portfolio-container div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio-item-container {
+        height: 35rem;
+        width: 35rem;
+    }
+    .portfolio-item--description p {
+        font-size: 1.6rem;
+    }
+     .portfolio-container h1{
+        font-size: 3.2rem;
+    }
+    .portfolio-item-container{
+         margin: 1rem;
+    }
+    .portfolio-container p{
+        font-size: 2rem;
+    }
+    .portfolio-item--description p{
+        font-size: 1.6rem
+    
+    }
+    .contact{
+        
+        width: 50rem;
+        font-size: 1.8rem;
+    }
+   
+}
+.footer{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    color: #f0f0f0;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+@media screen and (min-width:1440px) {
+    .portfolio-container {
+        /* width: 120rem; */
+        max-width: 120rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .portfolio-item-container {
+        height: 35rem;
+        width: 35rem;
+    }
+    .portfolio-item--description p {
+        font-size: 1.6rem;
+    }
+     .portfolio-container h1{
+        font-size: 3.2rem;
+    }
+    .portfolio-item-container{
+         margin: 1rem;
+    }
+    .portfolio-container p{
+        font-size: 2rem;
+    }
+    .portfolio-item--description p{
+        font-size: 1.6rem
+    
+    }
+    .contact{
+        
+        width: 50rem;
+        font-size: 1.8rem;
+    }
+   
+}
