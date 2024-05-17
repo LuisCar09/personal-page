@@ -187,6 +187,11 @@ body{
     box-shadow:0 -4px 8px rgba(0, 0, 0, 0),0 8px 16px rgba(0, 0, 0, 0.2);
     height: 35rem;
 }
+.portfolio-item-container:hover{
+    transform: scale(1.01);
+    animation: transform 1s ease-in-out;
+    cursor: pointer;
+}
 .portfolio-container p{
     font-weight: 300;
     margin: 2rem 0;
@@ -236,7 +241,23 @@ body{
     transform: scale(1.01);
     animation: transfor .2s ease-in-out;
 }
+.footer{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    font-size: 2.4rem;
+    color: #f0f0f0;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
 @media screen and (min-width:768px) {
+    .portfolio-bg{
+        
+        background-size: 80rem auto;
+        
+    }
     .portfolio-container{
         max-width: 45rem; 
     }
@@ -263,11 +284,19 @@ body{
         width: 41rem;
         
     }
+    .footer{
+        
+        font-size: 2.8rem;
+    }
 }
 
 @media screen and (min-width:1024px) {
+    .portfolio-bg{
+        
+        background-size: 100rem auto;
+        
+    }
     .portfolio-container {
-        /* width: 95rem; */
         max-width: 95rem;
         display: flex;
         flex-wrap: wrap;
@@ -307,18 +336,13 @@ body{
     }
    
 }
-.footer{
-    position: relative;
-    z-index: 10;
-    display: flex;
-    justify-content: end;
-    font-size: 2rem;
-    color: #f0f0f0;
-    font-weight: 900;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-}
+
 @media screen and (min-width:1440px) {
+    .portfolio-bg{
+        
+    background-size: 120rem auto;
+        
+    }
     .portfolio-container {
         /* width: 120rem; */
         max-width: 120rem;
@@ -353,5 +377,12 @@ body{
         width: 50rem;
         font-size: 1.8rem;
     }
-   
+    .footer{
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        margin: 0;
+        font-size: 3rem;
+    }
+    
 }
