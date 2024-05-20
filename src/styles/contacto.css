@@ -288,9 +288,10 @@ button[type="reset"]:hover {
 }
 
 @media screen and (min-width:768px) {
-    .navbar-list--toogle{
+    .navbar-list--toogle {
         width: 24rem;
-    } 
+    }
+
     .contact-container {
         width: 48rem;
         max-width: 48rem;
@@ -324,9 +325,10 @@ button[type="reset"]:hover {
 }
 
 @media screen and (min-width:1024px) {
-    .navbar-list--toogle{
+    .navbar-list--toogle {
         width: 26rem;
-    } 
+    }
+
     .contact-container {
         width: 60em;
         max-width: 60rem;
@@ -366,44 +368,51 @@ button[type="reset"]:hover {
 }
 
 @media screen and (min-width:1440px) {
-    .navbar-list--toogle{
+    .navbar-list--toogle {
         width: 30rem;
-    } 
+    }
 }
+
 @media screen and (min-width:2200px) {
-       
-    .navbar-logo{
+
+    .navbar-logo {
         font-size: 3rem;
     }
+
     .navbar-right {
         font-size: 4rem;
-        
-        
-    } 
-    .navbar-right p{
+
+
+    }
+
+    .navbar-right p {
         font-size: 2.6rem;
         margin-right: 3rem;
-        
+
     }
+
     .navbar-list--toogle {
         width: 40rem;
-        
+        font-size: 3.6rem;
     }
 
     .navbar-list--toogle {
 
         transform: translateX(40rem);
     }
-    .moveLeft{
+
+    .moveLeft {
         transform: translateX(0);
-        
+
     }
-    .navbar-list--toogle ul a{
-    
-    font-size: 3.2rem;    
+
+    .navbar-list--toogle ul a {
+
+        font-size: 3.2rem;
     }
-    .navbar-list--toogle ul a li{
+
+    .navbar-list--toogle ul a li {
         margin-bottom: 1rem;
-        padding: 2rem 0 0 0 ;
+        padding: 2rem 0 0 0;
     }
 }

@@ -1,78 +1,87 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
     overflow: hidden;
 }
-.navbar{
-    padding: 1rem 2rem ;
+
+.navbar {
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     position: fixed;
     font-size: 3rem;
-    align-items:flex-end;
+    align-items: flex-end;
     background-color: #348cb2;
     color: white;
     width: 100vw;
-    z-index: 100; 
+    z-index: 100;
     top: 0;
     left: 0;
 }
-.navbar-logo{
+
+.navbar-logo {
     font-size: 2rem;
 }
-.navbar-right{
+
+.navbar-right {
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: center;
 }
-.navbar-menu{
+
+.navbar-menu {
     cursor: pointer;
 }
-.navbar-right p{
+
+.navbar-right p {
     font-size: 2rem;
     margin-right: 1.6rem;
     letter-spacing: 0.3rem;
     font-size: 500;
 }
-.navbar-list--toogle{
-    
+
+.navbar-list--toogle {
+
     position: absolute;
     right: 0;
     top: 0rem;
     height: 100vh;
     font-size: 3rem;
     width: 19rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
-    background-color:#219ebc;
+    background-color: #219ebc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transform: translateX(30rem);
     transition: transform 1s ease;
-} 
-.moveLeft{
+}
+
+.moveLeft {
     transform: translateX(0);
-    
+
 }
 
 
-.navbar-list--toogle .close-navbar{
-    
+.navbar-list--toogle .close-navbar {
+
     color: #f0f0f0;
     display: flex;
     justify-content: flex-end;
-    
+
 }
-.close-navbar-second{
-   
+
+.close-navbar-second {
+
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -80,15 +89,17 @@ body{
     justify-content: center;
     border-radius: 50%;
     border: 0.3rem solid #f0f0f0;
-    
+
 }
-.close-navbar .close-navbar-second:hover{
-   
+
+.close-navbar .close-navbar-second:hover {
+
     background-color: rgba(200, 200, 200, 0.5);
     /* transform: scale(1.02); */
     animation: background-color 1s ease-in-out;
     cursor: pointer;
 }
+
 /* .navbar-list--toogle div i:hover{
     transform: scale(1.02);
     animation: transform 1s ease-in-out;
@@ -96,109 +107,122 @@ body{
     
 } */
 .navbar-list--toogle ul {
-    text-align:start;
-    
+    text-align: start;
+
 }
-.navbar-list--toogle ul a{
-    
+
+.navbar-list--toogle ul a {
+
     text-decoration: none;
     color: #f0f0f0;
     font-size: 2.2rem;
     font-weight: 500;
-    
+
 }
-.navbar-list--toogle ul a li{
-    padding: 1rem 0 0  0;
+
+.navbar-list--toogle ul a li {
+    padding: 1rem 0 0 0;
     list-style-type: none;
     margin: 1rem 0 1rem 0;
     border-top: 2px solid #348cb2;
     cursor: pointer;
 }
-.navbar-list--toogle .navbar-list-first--item{
+
+.navbar-list--toogle .navbar-list-first--item {
     border-top: none;
 }
 
 
-.navbar-right ul a li{
+.navbar-right ul a li {
     margin-bottom: 0.6rem;
-    color: #333;  
+    color: #333;
     padding: 0.2rem 1rem;
 }
- 
+
 .navbar-list--toogle ul a li:hover {
-    
+
     border-radius: 0.5rem;
     transform: scale(1.02);
     animation: transform 1s ease-in-out;
-} 
+}
+
 /*------------ end navbar-------------- */
 
-.main-biografia-container{
+.main-biografia-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(/personal-page/src/assets/images/bg-button.png);
-    
+
 }
-.biografia-container{
+
+.biografia-container {
     height: 100vh;
     display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0rem 1rem; 
+    padding: 0rem 1rem;
     justify-content: center;
     max-width: 35rem;
     z-index: 10;
 }
-.biografia-container-bg{
+
+.biografia-container-bg {
     height: 100vh;
     top: 0;
     left: 0;
     background: #348cb2 url(../assets/images/bg.jpg) bottom left;
     background-repeat: repeat-x;
     position: fixed;
-    width: 6000px; 
+    width: 6000px;
     z-index: 1;
-    transform: translate3d(0,0,0);
-    animation: moveInfinity 200s linear infinite; 
+    transform: translate3d(0, 0, 0);
+    animation: moveInfinity 200s linear infinite;
     background-size: 50rem auto;
 }
 
 @keyframes moveInfinity {
-    from{
-        transform: translate3d(0,0,0);
-    }to{
-        transform: translate3d(-250rem,0,0);
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-250rem, 0, 0);
     }
 }
-.biografia-container--img{
+
+.biografia-container--img {
     width: 24rem;
     height: 24rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
+
 }
+
 /*------------ end img contenedor---------- */
-.biografia-container-content{
+.biografia-container-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
-.biografia-container-content--title{
+
+.biografia-container-content--title {
     margin-top: 3rem;
     font-size: 3rem;
     margin-bottom: 4rem;
     color: #f0f0f0;
-    
+
 }
-.biografia-container-content--title span{
-   font-weight: 300;
-    
+
+.biografia-container-content--title span {
+    font-weight: 300;
+
 }
+
 .biografia-container-content--parragraph {
     letter-spacing: 0.1rem;
     font-size: 1.8rem;
@@ -206,7 +230,8 @@ body{
     text-align: center;
     color: #f0f0f0;
 }
-.biografia-container-content--projects{
+
+.biografia-container-content--projects {
     margin-top: 10rem;
     text-decoration: none;
     font-size: 1.6rem;
@@ -231,151 +256,178 @@ body{
 
 
 @media screen and (min-width:768px) {
-    
-    .navbar-list--toogle{
+
+    .navbar-list--toogle {
         width: 24rem;
-    } 
-    .biografia-container{
-        
-        max-width: 45rem;
-        
     }
-    .biografia-container-bg{
-       
+
+    .biografia-container {
+
+        max-width: 45rem;
+
+    }
+
+    .biografia-container-bg {
+
         background-size: 80rem auto;
     }
-    .biografia-container-content--title{
-        
-        font-size: 4rem;  
-        
+
+    .biografia-container-content--title {
+
+        font-size: 4rem;
+
     }
-    
+
 
 }
+
 @media screen and (min-width:1024px) {
-    
-    .navbar-list--toogle{
+
+    .navbar-list--toogle {
         width: 26rem;
-    } 
-    .biografia-container{
-        flex-direction:row;
-        max-width: 70rem;
-        
     }
-    .biografia-container-bg{
-       
+
+    .biografia-container {
+        flex-direction: row;
+        max-width: 70rem;
+
+    }
+
+    .biografia-container-bg {
+
         background-size: 100rem auto;
     }
-    .biografia-container--img{
+
+    .biografia-container--img {
         width: 30rem;
         height: 30rem;
         margin-right: 2rem;
     }
-    .biografia-container-content{
+
+    .biografia-container-content {
         height: 30rem;
-        
+
         justify-content: space-between;
     }
-    .biografia-container-content--title{
-        
-        font-size: 4.6rem;  
+
+    .biografia-container-content--title {
+
+        font-size: 4.6rem;
         margin: 0;
     }
+
     .biografia-container-content--parragraph {
-        
+
         font-size: 2rem;
         line-height: 3rem;
-        
+
     }
-    .biografia-container-content--projects{
+
+    .biografia-container-content--projects {
         margin: 0;
         width: 90%;
     }
 }
+
 @media screen and (min-width:1440px) {
-    
-    
-    .navbar-list--toogle{
+
+
+    .navbar-list--toogle {
         width: 30rem;
-    } 
-    .biografia-container{
-        flex-direction:row;
-        max-width: 80rem;
-        
     }
-    .biografia-container-bg{
-       
+
+    .biografia-container {
+        flex-direction: row;
+        max-width: 80rem;
+
+    }
+
+    .biografia-container-bg {
+
         background-size: 120rem auto;
     }
-    .biografia-container--img{
+
+    .biografia-container--img {
         width: 34rem;
         height: 34rem;
         margin-right: 2rem;
     }
-    .biografia-container-content{
+
+    .biografia-container-content {
         height: 34rem;
-        
+
         justify-content: space-between;
     }
-    .biografia-container-content--title{
-        
-        font-size: 5.4rem;  
+
+    .biografia-container-content--title {
+
+        font-size: 5.4rem;
         margin: 0;
     }
+
     .biografia-container-content--parragraph {
-        
+
         font-size: 3rem;
         line-height: 3rem;
-        
+
     }
-   
-    
+
+
 }
+
 @media screen and (min-width:2200px) {
-    
-    
-    .navbar-logo{
+
+
+    .navbar-logo {
         font-size: 3rem;
     }
+
     .navbar-right {
         font-size: 4rem;
-        
-        
-    } 
-    .navbar-right p{
+
+
+    }
+
+    .navbar-right p {
         font-size: 2.6rem;
         margin-right: 3rem;
-        
+
     }
+
     .navbar-list--toogle {
         width: 40rem;
-        
+        font-size: 3.6rem;
     }
 
     .navbar-list--toogle {
 
         transform: translateX(40rem);
+
     }
-    .moveLeft{
+
+    .moveLeft {
         transform: translateX(0);
-        
+
     }
-    .navbar-list--toogle ul a{
-    
-    font-size: 3.2rem;    
+
+    .navbar-list--toogle ul a {
+
+        font-size: 3.2rem;
     }
-    .navbar-list--toogle ul a li{
+
+    .navbar-list--toogle ul a li {
         margin-bottom: 1rem;
-        padding: 2rem 0 0 0 ;
+        padding: 2rem 0 0 0;
     }
 
 
 }
-@media  screen and (max-height:700px) {
-    .biografia-container--img{
+
+@media screen and (max-height:700px) {
+    .biografia-container--img {
         width: 18rem;
         height: 18rem;
         margin-top: 3rem;
-      
+
     }
 }
