@@ -89,12 +89,7 @@ body{
     animation: background-color 1s ease-in-out;
     cursor: pointer;
 }
-/* .navbar-list--toogle div i:hover{
-    transform: scale(1.02);
-    animation: transform 1s ease-in-out;
-    color: #f0f0f0;
-    
-} */
+
 .navbar-list--toogle ul {
     text-align:start;
     
@@ -131,6 +126,8 @@ body{
     transform: scale(1.02);
     animation: transform 1s ease-in-out;
 } 
+/*------------------- env navbar -----------------------*/
+
 .portfolio-bg{
     height: 100vh;
     top: 0;
