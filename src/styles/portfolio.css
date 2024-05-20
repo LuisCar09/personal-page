@@ -250,6 +250,9 @@ body{
     margin-right: 2rem;
 }
 @media screen and (min-width:768px) {
+    .navbar-list--toogle{
+        width: 24rem;
+    } 
     .portfolio-bg{
         
         background-size: 80rem auto;
@@ -288,6 +291,10 @@ body{
 }
 
 @media screen and (min-width:1024px) {
+    .navbar-list--toogle{
+        width: 26rem;
+    } 
+    
     .portfolio-bg{
         
         background-size: 100rem auto;
@@ -335,6 +342,9 @@ body{
 }
 
 @media screen and (min-width:1440px) {
+    .navbar-list--toogle{
+        width: 30rem;
+    } 
     .portfolio-bg{
         
     background-size: 120rem auto;
@@ -382,4 +392,45 @@ body{
         font-size: 3rem;
     }
     
+}
+
+@media screen and (min-width:2200px) {
+    
+    
+    .navbar-logo{
+        font-size: 3rem;
+    }
+    .navbar-right {
+        font-size: 4rem;
+        
+        
+    } 
+    .navbar-right p{
+        font-size: 2.6rem;
+        margin-right: 3rem;
+        
+    }
+    .navbar-list--toogle {
+        width: 40rem;
+        
+    }
+
+    .navbar-list--toogle {
+
+        transform: translateX(40rem);
+    }
+    .moveLeft{
+        transform: translateX(0);
+        
+    }
+    .navbar-list--toogle ul a{
+    
+    font-size: 3.2rem;    
+    }
+    .navbar-list--toogle ul a li{
+        margin-bottom: 1rem;
+        padding: 2rem 0 0 0 ;
+    }
+
+
 }
