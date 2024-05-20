@@ -79,8 +79,8 @@ body {
 
 .close-navbar-second {
 
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,12 +97,7 @@ body {
     cursor: pointer;
 }
 
-/* .navbar-list--toogle div i:hover{
-    transform: scale(1.02);
-    animation: transform 1s ease-in-out;
-    color: #f0f0f0;
-    
-} */
+
 .navbar-list--toogle ul {
     text-align: start;
 
@@ -363,6 +358,12 @@ body {
         font-size: 4rem;
 
 
+    }
+    .close-navbar-second {
+
+        width: 6rem;
+        height: 6rem;
+    
     }
 
     .navbar-right p {

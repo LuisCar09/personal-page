@@ -387,6 +387,12 @@ body {
 
 
     }
+    .close-navbar-second {
+
+        width: 6rem;
+        height: 6rem;
+    
+    }
 
     .navbar-right p {
         font-size: 2.6rem;
