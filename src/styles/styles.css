@@ -24,7 +24,12 @@ body {
     width: 100vw;
     z-index: 100;
 }
-
+.logo-anchor{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 .navbar-logo {
     font-size: 2rem;
 }

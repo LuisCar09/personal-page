@@ -31,7 +31,12 @@ body {
 .navbar-logo {
     font-size: 2rem;
 }
-
+.logo-anchor{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 .navbar-right {
     display: flex;
     align-items: flex-end;
