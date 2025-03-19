@@ -190,6 +190,11 @@ body {
     color: #f0f0f0;
 
 }
+.portfolio-item-container a{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
 
 .portfolio-container h1 {
 
@@ -219,8 +224,8 @@ body {
 
 .portfolio-container p {
     font-weight: 300;
-    margin: 2rem 0;
-    font-size: 1.7rem;
+    margin: 2rem 0 0 ;
+    font-size: 1rem;
 }
 
 .portfolio-item--img-container {
@@ -358,12 +363,12 @@ body {
     }
 
     .portfolio-item-container {
-        height: 35rem;
+        height: 45rem;
         width: 35rem;
     }
 
     .portfolio-item--description p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .portfolio-container h1 {
@@ -379,7 +384,7 @@ body {
     }
 
     .portfolio-item--description p {
-        font-size: 1.6rem
+        font-size: 1.4rem
     }
 
     .contact {
@@ -411,13 +416,11 @@ body {
     }
 
     .portfolio-item-container {
-        height: 35rem;
+        height: 45rem;
         width: 35rem;
     }
 
-    .portfolio-item--description p {
-        font-size: 1.6rem;
-    }
+    
 
     .portfolio-container h1 {
         font-size: 3.2rem;
@@ -432,7 +435,7 @@ body {
     }
 
     .portfolio-item--description p {
-        font-size: 1.6rem
+        font-size: 1.4rem
     }
 
     .contact {
