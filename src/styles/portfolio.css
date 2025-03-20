@@ -235,6 +235,8 @@ body {
 
 .portfolio-item--description {
     height: 35%;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-item--img-container img {
@@ -313,7 +315,8 @@ body {
     }
 
     .portfolio-item-container {
-        height: 45rem;
+        height: 50rem;
+        width: 40rem;
     }
 
     .portfolio-item--description h3 {
@@ -321,7 +324,7 @@ body {
     }
 
     .portfolio-item--description p {
-        font-size: 2rem
+        font-size: 1.6rem
     }
 
     .contact {
@@ -360,11 +363,12 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        /* margin-top: 2rem; */
     }
 
     .portfolio-item-container {
-        height: 45rem;
-        width: 35rem;
+        height: 50rem;
+        width: 40rem;
     }
 
     .portfolio-item--description p {
@@ -372,7 +376,7 @@ body {
     }
 
     .portfolio-container h1 {
-        font-size: 3.2rem;
+        font-size: 4.2rem;
     }
 
     .portfolio-item-container {
@@ -408,7 +412,7 @@ body {
 
     .portfolio-container {
         /* width: 120rem; */
-        max-width: 120rem;
+        max-width: 140rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -416,14 +420,14 @@ body {
     }
 
     .portfolio-item-container {
-        height: 45rem;
-        width: 35rem;
+        height: 56rem;
+        width: 40rem;
     }
 
     
 
     .portfolio-container h1 {
-        font-size: 3.2rem;
+        font-size: 4.2rem;
     }
 
     .portfolio-item-container {
@@ -435,7 +439,7 @@ body {
     }
 
     .portfolio-item--description p {
-        font-size: 1.4rem
+        font-size: 1.6rem
     }
 
     .contact {
@@ -445,7 +449,7 @@ body {
     }
 
     .footer {
-        position: absolute;
+        
         right: 2rem;
         bottom: 2rem;
         margin: 0;
