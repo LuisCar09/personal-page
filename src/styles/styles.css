@@ -38,6 +38,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin-right: 2rem;
 }
 
 .navbar-menu {
